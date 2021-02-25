@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Scorekeeper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+      <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div id="home" class="item text-center">
+
+                        <div class="amount">
+
+                            <div class="team"></div>
+
+                            <span>0</span>
+
+                        </div>
+
+                        <button class="add-1" data-value="1">+1</button>
+                        <button class="add-2" data-value="2">+2</button>
+                        <button class="add-3" data-value="3">+3</button>
+                   
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div id="away" class="item text-center">
+
+                        <div class="amount">
+
+                            <div class="team"></div>
+
+                            <span>0</span>
+
+                        </div>
+
+                        <button class="add-1" data-value="1">+1</button>
+                        <button class="add-2" data-value="2">+2</button>
+                        <button class="add-3" data-value="3">+3</button>
+                
+                </div>
+                
+            </div>
+
+        </div>
+
+            <div id="options" class="text-center">
+
+                <button class="reset">Reset</button>
+                <button class="teams">Teamkonfiguration</button>
+
+            </div>
+
+      </div>
+    </main>
+
+
+<div id="teamModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Teams</h2>
+    <p>Konfigurieren Sie Ihr Team und geben Sie Ihre gewünschten Teamnamen ein.</p>
+
+    <div class="form__group field">
+        <input type="text" class="form__field" placeholder="Name eingeben..." id='team1' maxlength="10" />
+        <label class="form__label" for="team1">Team1</label>
+      </div>
+
+      <div class="form__group field">
+        <input type="text" class="form__field" placeholder="Name eingeben..." id='team2' maxlength="10" />
+        <label class="form__label" for="team2">Team2</label>
+      </div>
+
+      <div class="text-right">
+        <button class="close">Close</button>
+      </div>
+
+  </div>
+
+</div>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
